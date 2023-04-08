@@ -1,0 +1,28 @@
+<mat-card class="card">
+    <mat-card-header>
+        <h3> <strong>Create New Question</strong></h3>
+    </mat-card-header>
+    <mat-card-content>
+        <h4>Complete the question.</h4>
+        <h2 class="center">
+            <strong>Would you rather</strong>
+            
+        </h2>
+        <form (ngSubmit)="onSubmit()" class="example-form" ngNativeValidate>
+            <mat-form-field appearance="fill">
+                <input type="text" [(ngModel)]="optionOneText" style="margin-bottom: 0;" name="optionOne" required
+                    placeholder="Enter Option One Text Here" aria-label="option 1" matInput>
+            </mat-form-field>
+            <div class="devider">
+                <span class="span">
+                  OR
+                </span>
+              </div>
+            <mat-form-field class="paddingTop" appearance="fill">
+                <input type="text" [(ngModel)]="optionTwoText" style="margin-bottom: 0;" name="optionOne" required
+                    placeholder="Enter Option Two Text Here" aria-label="option 1" matInput>
+            </mat-form-field>
+            <button type="submit" loading={saving} class="btn btn-primary">Add</button>
+        </form>
+    </mat-card-content>
+</mat-card>
