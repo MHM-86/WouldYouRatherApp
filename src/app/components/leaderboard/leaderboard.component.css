@@ -1,0 +1,28 @@
+mat-card-header {
+    background-color: lightgrey;
+    text-align: center;
+    display: block;
+}
+.mat-table {
+    vertical-align: middle;
+}
+.RankDiv{
+    font-size: 66px;
+    text-align: center;
+    color: #00539CFF;
+}
+.main-section {
+    width: 60%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: auto;
+}
+h3 {
+    text-align: center;
+}
+.ScoreCard {
+    text-align: center !important;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
